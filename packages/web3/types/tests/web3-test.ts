@@ -89,7 +89,6 @@ web3 = new Web3('https://localhost:5000/', netSocket);
 // $ExpectType Web3
 web3 = new Web3();
 
-
 class CustomProvider1 implements AbstractProvider {
     sendAsync(payload: JsonRpcPayload, callback: (error: Error | null, result?: JsonRpcResponse) => void) {}
 }
