@@ -219,6 +219,12 @@ export interface JsonRpcResponse {
     error?: string;
 }
 
+export interface RequestArguments {
+    method: string;
+    params?: unknown;
+    [key: string]: unknown;
+}
+
 export interface RevertInstructionError extends Error {
     reason: string;
     signature: string;
